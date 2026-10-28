@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DataShield - Detector Educativo de Riscos à Privacidade" />
+    <title>DataShield</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div>
+          <span class="eyebrow">Projeto 02</span>
+          <h1>DataShield</h1>
+        </div>
+        <div class="badge">Privacidade em foco</div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card hero">
+        <div>
+          <span class="eyebrow">Detector Educativo de Riscos à Privacidade</span>
+          <h2>Proteja seus dados com hábitos mais seguros.</h2>
+          <p>
+            Este site ajuda a avaliar seus hábitos digitais e identificar comportamentos que aumentam
+            o risco de vazamento ou exposição indevida de informações pessoais, com base nos princípios
+            da LGPD.
+          </p>
+        </div>
+
+        <div class="risk-box">
+          <span class="risk-label">Nível de risco</span>
+          <div id="riskLevel" class="risk-level low">Baixo</div>
+          <div id="riskScore" class="risk-score">0 pontos</div>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <div class="card panel">
+          <div class="section-title">
+            <h3>Questionário de hábitos digitais</h3>
+            <span>5 perguntas</span>
+          </div>
+
+          <div class="progress">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+
+          <div id="questions" class="questions"></div>
+
+          <button id="resetQuiz" class="secondary-btn" type="button">Reiniciar avaliação</button>
+        </div>
+
+        <aside class="card panel metrics">
+          <h3>Painel visual</h3>
+          <div class="metric-grid">
+            <div class="metric-box">
+              <span>Senha reutilizada</span>
+              <strong id="statQ1">0</strong>
+            </div>
+            <div class="metric-box">
+              <span>Compartilhamento</span>
+              <strong id="statQ2">0</strong>
+            </div>
+            <div class="metric-box">
+              <span>Phishing</span>
+              <strong id="statQ3">0</strong>
+            </div>
+            <div class="metric-box">
+              <span>2FA</span>
+              <strong id="statQ4">0</strong>
+            </div>
+            <div class="metric-box" style="grid-column: 1 / -1;">
+              <span>Revisão de privacidade</span>
+              <strong id="statQ5">0</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card panel recommendations">
+        <h3>Recomendações personalizadas</h3>
+        <ul id="recommendationsList" class="recommendations-list">
+          <li>Continue com boas práticas de senha e privacidade.</li>
+        </ul>
+      </section>
+
+      <section class="card panel simulator">
+        <h3>Simulador educativo de incidentes</h3>
+        <div class="simulator-list">
+          <article class="simulator-item">
+            <span class="tag high">Alto</span>
+            <h4>Phishing por e-mail institucional</h4>
+            <p>Um e-mail falso pode pedir confirmação de senha, CPF ou dados bancários em nome da empresa.</p>
+          </article>
+          <article class="simulator-item">
+            <span class="tag medium">Médio</span>
+            <h4>Compartilhamento em rede social</h4>
+            <p>Publicar fotos, endereço ou rotina pode facilitar a coleta de dados por terceiros.</p>
+          </article>
+          <article class="simulator-item">
+            <span class="tag high">Alto</span>
+            <h4>Senha reutilizada</h4>
+            <p>Se uma conta for vazada, também ficam expostas outras contas que usam a mesma senha.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card panel cartilha">
+        <h3>Escudo Digital: Proteja Seus Dados!</h3>
+        <div class="cartilha-grid">
+          <article class="cartilha-item">
+            <h4>Senhas</h4>
+            <p>Use senhas longas, exclusivas e evite reaproveitar a mesma senha em vários serviços.</p>
+          </article>
+          <article class="cartilha-item">
+            <h4>2FA</h4>
+            <p>Ative a autenticação em duas etapas para e-mails, bancos e contas essenciais.</p>
+          </article>
+          <article class="cartilha-item">
+            <h4>Phishing</h4>
+            <p>Desconfie de links urgentes, e-mails sem remetente claro e solicitações de dados pessoais.</p>
+          </article>
+          <article class="cartilha-item">
+            <h4>Compartilhamento</h4>
+            <p>Controle quem pode ver suas informações e evite expor dados sensíveis em perfis públicos.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
